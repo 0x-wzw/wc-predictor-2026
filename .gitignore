@@ -22,9 +22,8 @@ wheels/
 
 # Virtual environments
 venv/
-ENV/
 env/
-.venv/
+ENV/
 
 # IDE
 .vscode/
@@ -33,38 +32,18 @@ env/
 *.swo
 *~
 
-# Secrets
-.env
-.env.local
-.env.production
-*.pem
-*.key
-config/secrets.json
-secrets.yaml
+# Model artifacts
+*.pkl
+*.pickle
 
-# Data files with sensitive info
-data/raw/private/
-*.sqlite
-
-# Logs
-logs/
+# Data logs
+*.jsonl
 *.log
 
-# OS
-.DS_Store
-Thumbs.db
+# Reports
+/tmp/
+/tmp/wc_monitor/
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# Model artifacts (large files)
-*.pkl
-*.h5
-*.pb
-models/large/
-
-# Temporary
-tmp/
-temp/
-*.tmp
+# Sensitive
+.env
+.env.local
